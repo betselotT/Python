@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+num = a//b
+modulo = a % b
+print(num)
+print(modulo)
+print(divmod(a, b))
