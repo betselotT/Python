@@ -1,5 +1,5 @@
 from collections import deque
-n = int(input())
+n = int(input("Enter an integer: "))
 d = deque()
 for i in range(n):
     command = input().split()
