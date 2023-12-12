@@ -8,7 +8,7 @@ def chess(position):
     for i in places:
         if i + number != position:
             print(i + number)
-n = int(input())
+n = int(input("Enter an integer: "))
 while n:
     po = input()
     chess(po)
