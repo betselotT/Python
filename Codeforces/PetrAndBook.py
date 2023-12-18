@@ -1,11 +1,18 @@
+def finish(pages, days):
+    listOfDays = days.split(" ")
+    count = 0
+    indexchange = 0
+    for i in range(len(listOfDays)):
+        count += int(listOfDays[i])
+        if count >= pages:
+            indexchange += i+1
+            break
+    if count < pages and pages - count != 0:
+        recursive_result = finish(pages - count, days)
+    if indexchange != 0:
+        print(indexchange)
+
+
 n = int(input())
-count = 0
-arr = []
-for i in range(7):
-    pages = int(input())
-    arr.append(pages)
-for i in range(len(arr)):
-    if count != n:
-        count += arr[i]
-    else:
-        print(arr[i])
+s = input()
+finish(n, s)
