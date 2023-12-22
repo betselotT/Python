@@ -1,13 +1,14 @@
-def team(petya, vasya, tonya):
-    count = 0
-    if petya + vasya + tonya >= 2:
-        count += 1
-    print(count)
+count = 0
+def team(nums):
+    if sum(nums) > 1:
+        return 1
+    else:
+        return 0
+
 
 n = int(input())
 while n:
-    p = int(input())
-    v = int(input())
-    t = int(input())
+    nums = list(map(int,input().split()))
     n-=1
-team(p, v, t)
+    count += team(nums)
+print(count)
