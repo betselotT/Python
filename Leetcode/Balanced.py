@@ -11,3 +11,10 @@ class Solution:
             if balance == 0:
                 count += 1
         return count
+
+    answer = []
+    for i in range(len(nums)):
+        if (i == 0 or i % 2 == 0):
+            element = str(nums[i]) * (i + 1)
+            answer.append(element)
+    print(answer)
