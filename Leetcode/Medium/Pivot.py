@@ -12,4 +12,5 @@ class Solution:
             else:
                 mpivot.append(nums[i])
         arr = lpivot + mpivot + gpivot
+
         return arr
