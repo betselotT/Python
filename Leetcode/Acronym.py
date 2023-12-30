@@ -3,8 +3,7 @@ class Solution:
         arr = []
         for i in range(len(words)):
             arr.append(words[i][0])
-        answer = "".join(arr)
-        if answer == s:
+        if "".join(arr) == s:
             return True
         else:
             return False
