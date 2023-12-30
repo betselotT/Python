@@ -3,12 +3,16 @@ def unnatural(words):
     C = ['b', 'c', 'd']
     arr = []
     for i in range(len(words)):
-        for j in range(1, len(words)):
-            for k in range(2, len(words)):
-                if words[i] in C and words[j] in V:
-                    arr.append(words[i][j])
-                elif words[i] in C and words[j] in V and words[k] in C:
-                    arr.append(words[i][j][k])
+        if words[i] in V:
+            if words[i - 1] in C and words[i + 1] not in C:
+                arr.append(words[i - 1])
+                arr.append(words[i])
+            elif words[i - 1] in C and words[i + 1] in C:
+                arr.append(words[i + 1])
+                arr.append(words[i])
+                arr.append(words[i - 1])
+            else:
+                break
     print(arr)
 # ['b', 'a', 'c', 'e', 'd', 'b', 'a', 'b']
 
