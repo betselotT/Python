@@ -10,11 +10,10 @@ class Solution:
             return second
         elif n == 2:
             return third
-        if n > 2:
-            for _ in range(3, n + 1):
-                final = first + second + third
-                temp = third
-                third = final
-                first = second
-                second = temp
+        for _ in range(3, n + 1):
+            final = first + second + third
+            temp = third
+            third = final
+            first = second
+            second = temp
         return final

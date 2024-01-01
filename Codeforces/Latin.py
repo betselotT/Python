@@ -13,7 +13,7 @@ def latin(lines):
     elif c != 3:
         print("C")
 
-n = int(input())
+n = int(input("Enter number of test cases: "))
 while n:
     lines = []
     for _ in range(3):
