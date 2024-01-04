@@ -12,7 +12,23 @@ class LinkedList:
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
+    def delete(self, value):
+        if self.head is None:
+            print("Linked list is empty")
+            return
 
+        if self.head.data == value:
+            self.head = self.head.next
+            return
+
+        itr = self.head
+        while itr.next:
+            if itr.next.data == value:
+                itr.next = itr.next.next
+                return
+            itr = itr.next
+
+        print(f"Element {value} not found in the linked list")
     def display(self):
         itr = self.head
         while itr:
@@ -27,5 +43,9 @@ linked_list.insert(20)
 linked_list.insert(30)
 linked_list.insert(40)
 linked_list.insert(50)
+
+linked_list.display()
+
+linked_list.delete(10)
 
 linked_list.display()
