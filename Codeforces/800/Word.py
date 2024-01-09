@@ -11,5 +11,5 @@ def changed(word):
     else:
         return word.lower()
 
-word = input()
+word = input("Enter a word: ")
 print(changed(word))
