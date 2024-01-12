@@ -13,7 +13,7 @@ def minimum_seconds(n, cupboard_info):
     print(min_left + min_right)
 
 
-n = int(input())
+n = int(input("Enter the numbers: "))
 cupboard_info = []
 for i in range(n):
     l, r = map(int, input().split())
