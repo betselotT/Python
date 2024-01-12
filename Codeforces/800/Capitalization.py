@@ -3,5 +3,5 @@ def cap(word):
     ans = first + word[1:]
     return ans
 
-word = input()
+word = input("Enter a word: ")
 print(cap(word))
