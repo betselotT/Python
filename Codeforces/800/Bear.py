@@ -6,5 +6,5 @@ def years(nums):
         count += 1
     return count
 
-nums = list(map(int,input().split()))
+nums = list(map(int,input("Enter the numbers: ").split()))
 print(years(nums))
