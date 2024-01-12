@@ -3,6 +3,6 @@ def domino(n, m):
     return num // 2
 
 
-n, m = list(map(int,input().split()))
+n, m = list(map(int,input("Enter n and m: ").split()))
 result = domino(n, m)
 print(result)
