@@ -10,3 +10,4 @@ while n:
     a, b = map(int, input().split())
     print(wallet(a, b))
     n -= 1
+# THis is a comment
