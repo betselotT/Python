@@ -6,4 +6,5 @@ class Solution:
             if number[i] == '6':
                 number[i] = '9'
                 break
-        return int(''.join(number))
+        ans = ''.join(number)
+        return int(ans)
