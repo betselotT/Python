@@ -11,6 +11,6 @@ def activities(first, second, third):
 
 n = int(input())
 while n:
-    inp = input("Enter the input: ")
+    inp = input()
     activities(inp)
     n-=1
