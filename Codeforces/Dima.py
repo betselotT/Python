@@ -8,7 +8,7 @@ def count(n, fingers_shown):
     return count
 
 
-n = int(input())
+n = int(input("Enter an integer: "))
 fingers_shown = list(map(int, input().split()))
 ways = count(n, fingers_shown)
 print(ways)
