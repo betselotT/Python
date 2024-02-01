@@ -9,7 +9,7 @@ def activities(first, second, third):
     print(answer)
 
 
-n = int(input("Enter a number"))
+n = int(input("Enter a number: "))
 while n:
     inp = input("Enter the input: ")
     activities(inp)
